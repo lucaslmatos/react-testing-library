@@ -37,7 +37,7 @@ describe('Teste 01 : Componente App.js', () => {
     userEvent.click(allLinks[2]);
     expect(history.location.pathname).toBe('/favorites');
   });
-  test('Testa se o terceiro link redireciona a página para a URL "/favorites"', () => {
+  test('Testa se a mensagem Page requested not Found aparece ao digitar uma URL inexistente', () => {
     const { history } = renderWithRouter(<App />);
     act(() => {
       history.push('/xablau');
