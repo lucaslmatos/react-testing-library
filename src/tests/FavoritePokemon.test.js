@@ -30,6 +30,5 @@ describe('Teste 03 : Componente FavoritePokemon.js', () => {
     expect(screen.getByRole('img', {
       name: /ekans is marked as favorite/i,
     }));
-    screen.logTestingPlaygroundURL();
   });
 });
